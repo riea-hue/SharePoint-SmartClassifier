@@ -1,0 +1,6 @@
+{
+  "name": "Microsoft Graph & SharePoint Mapper",
+  "description": "Herramienta de exploración y mapeo de estructuras de SharePoint utilizando OAuth2 con MSAL y Microsoft Graph API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
