@@ -71,34 +71,38 @@ La aplicación sigue un enfoque de arquitectura limpia desacoplada:
 
 Si deseas clonar este repositorio y ejecutarlo en tu propio entorno de desarrollo, sigue estos pasos:
 
-### 1. Clonar el repositorio
+1. Clonar el repositorio
 bash
-git clone [https://github.com/tu-usuario/RIEA-SharePoint-SmartClassifier.git]
+git clone [[https://github.com/tu-usuario/RIEA-SharePoint-SmartClassifier.git]
 
 2. Configurar variables de entorno (.env)
+
 Crea un archivo .env en la raíz del proyecto con los siguientes parámetros:
 
-Fragmento de código
-PORT=5000
-GEMINI_API_KEY=tu_gemini_api_key_aqui
-MICROSOFT_CLIENT_ID=tu_client_id_de_azure_ad
-MICROSOFT_TENANT_ID=tu_tenant_id_de_azure_ad
-MICROSOFT_CLIENT_SECRET=tu_client_secret_de_azure_ad
-REDIRECT_URI=http://localhost:5000/auth/callback
 3. Instalar dependencias y arrancar
-Bash
+
+PORT=5000 
+GEMINI_API_KEY=tu_gemini_api_key_aqui 
+
+MICROSOFT_CLIENT_ID=tu_client_id_de_azure_ad 
+
+MICROSOFT_TENANT_ID=tu_tenant_id_de_azure_ad 
+
+MICROSOFT_CLIENT_SECRET=tu_client_secret_de_azure_ad 
+
+REDIRECT_URI=http://localhost:5000/auth/callback
+
 # Instalar dependencias
 npm install
 
 # Levantar entorno de desarrollo
 npm run dev
+
 ⚠️ Nota Técnica para el Administrador de SharePoint
 Para que el guardado real funcione correctamente en producción, asegúrate de crear una columna personalizada en tu biblioteca o lista de SharePoint con las siguientes especificaciones:
 
 Nombre de la columna: AI Tags (SharePoint creará el nombre interno estático como AITags).
-
 Tipo de columna: Multiple lines of text (Texto de varias líneas).
-
 Configuración de texto: Plain text (Texto sin formato).
 
 🧑‍💻 Sobre el Autor (Marca RIEA)
