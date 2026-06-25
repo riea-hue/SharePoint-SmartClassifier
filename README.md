@@ -14,7 +14,7 @@ SharePoint-SmartClassifier es una solución experimental que utiliza IA para sug
 ---
 
 ## 🚀 Enlace del Proyecto
-Probad la aplicación en vivo utilizando el **Modo Demo Interactivo** (sin necesidad de configuraciones ni credenciales de Azure) aquí:
+Prueba la aplicación en vivo utilizando el **Modo Demo Interactivo** (sin necesidad de configuraciones ni credenciales de Azure) aquí:
 🔗https://sharepoint-smartclassifier-by-riea-782897543653.us-west2.run.app
 
 ---
@@ -23,7 +23,7 @@ Probad la aplicación en vivo utilizando el **Modo Demo Interactivo** (sin neces
 
 En el entorno corporativo actual, las empresas pierden cientos de horas-hombre organizando, etiquetando y buscando archivos dentro de sus repositorios digitales. **SharePoint SmartClassifier** nace para solucionar el caos documental de raíz mediante la intersección de **Procesos, Gobierno de Datos e Inteligencia Artificial**.
 
-La herramienta se conecta de manera segura a un sitio raíz de SharePoint, mapea su estructura jerárquica y utiliza el modelo de lenguaje de última generación **Gemini 1.5 Flash** para analizar el contexto de archivos individuales o carpetas completas. Como resultado, genera y guarda automáticamente **5 hashtags enriquecidos** directamente dentro de una columna de texto múltiple personalizada en SharePoint (`AI Tags`), optimizando de manera drástica el motor de búsqueda interno de la organización.
+La herramienta se conecta de manera segura a un sitio raíz de SharePoint, mapea su estructura jerárquica y utiliza Gemini 1.5 Flash para analizar el contexto de archivos individuales o carpetas completas. Como resultado, genera y guarda automáticamente **5 hashtags enriquecidos** directamente dentro de una columna de texto múltiple personalizada en SharePoint (`AI Tags`), optimizando de manera drástica el motor de búsqueda interno de la organización.
 
 ---
 
@@ -71,33 +71,38 @@ La aplicación sigue un enfoque de arquitectura limpia desacoplada:
 
 Si deseas clonar este repositorio y ejecutarlo en tu propio entorno de desarrollo, sigue estos pasos:
 
-1. Clonar el repositorio
-bash
-git clone [[https://github.com/tu-usuario/RIEA-SharePoint-SmartClassifier.git]
+### 1. Clonar el repositorio
 
+```bash
+git clone https://github.com/riea-hue/SharePoint-SmartClassifier.git
+cd SharePoint-SmartClassifier
+```
 2. Configurar variables de entorno (.env)
 
 Crea un archivo .env en la raíz del proyecto con los siguientes parámetros:
 
-3. Instalar dependencias y arrancar
+### Variables de entorno
 
-PORT=5000 
-GEMINI_API_KEY=tu_gemini_api_key_aqui 
+```env
+PORT=5000
 
-MICROSOFT_CLIENT_ID=tu_client_id_de_azure_ad 
+GEMINI_API_KEY=...
 
-MICROSOFT_TENANT_ID=tu_tenant_id_de_azure_ad 
+MICROSOFT_CLIENT_ID=...
 
-MICROSOFT_CLIENT_SECRET=tu_client_secret_de_azure_ad 
+MICROSOFT_TENANT_ID=...
+
+MICROSOFT_CLIENT_SECRET=...
 
 REDIRECT_URI=http://localhost:5000/auth/callback
+```
 
-# Instalar dependencias
+### Instalar
+
+```bash
 npm install
-
-# Levantar entorno de desarrollo
 npm run dev
-
+```
 ⚠️ Nota Técnica para el Administrador de SharePoint
 Para que el guardado real funcione correctamente en producción, asegúrate de crear una columna personalizada en tu biblioteca o lista de SharePoint con las siguientes especificaciones:
 
@@ -105,7 +110,7 @@ Nombre de la columna: AI Tags (SharePoint creará el nombre interno estático co
 Tipo de columna: Multiple lines of text (Texto de varias líneas).
 Configuración de texto: Plain text (Texto sin formato).
 
-🧑‍💻 Sobre el Autor (Marca RIEA)
+### Sobre el Autor (Marca RIEA) 🧑‍💻
 RIEA representa la intersección estratégica entre Gestión del Talento (HR), Operaciones de TI e Inteligencia Artificial.
 
 Como profesional de Recursos Humanos enfocado en la adopción de soluciones de TI y desarrollo de software, creé este producto para demostrar cómo la tecnología moderna e híbrida puede romper las barreras administrativas tradicionales, aportando un verdadero valor de arquitectura, optimización de costos (FinOps) y automatización de procesos a las organizaciones de nivel Enterprise.
