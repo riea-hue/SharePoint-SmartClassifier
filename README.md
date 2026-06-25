@@ -6,7 +6,9 @@
 ![Microsoft Graph](https://img.shields.io/badge/Microsoft%20Graph-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-> **Clasificación inteligente de documentos y carpetas con Inteligencia Artificial mediante Microsoft Graph API.** Una solución corporativa integral diseñada bajo la marca personal **RIEA** para optimizar la gobernanza de datos y la automatización de procesos en entornos Microsoft 365.
+>## Executive Summary
+
+SharePoint-SmartClassifier es una solución experimental que utiliza IA para sugerir etiquetas documentales dentro de bibliotecas de SharePoint. Su objetivo es reducir fricción operativa, mejorar la búsqueda interna y fortalecer prácticas de gobierno de datos en Microsoft 365.
 
 ---
 
@@ -111,3 +113,8 @@ AI was used as a development assistant for code generation, documentation and re
 RIEA | Asanaé ♠ | by PAMB
 
 Applied Intellectual and Ethical Responsibility
+
+## Estado del Proyecto
+
+Este proyecto es un Proof of Concept / Portfolio Project.
+No debe conectarse a entornos productivos sin una revisión previa de seguridad, permisos, cumplimiento y arquitectura empresarial.
