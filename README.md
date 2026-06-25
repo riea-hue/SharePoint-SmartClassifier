@@ -12,7 +12,7 @@
 
 ## 🚀 Enlace del Proyecto
 Probad la aplicación en vivo utilizando el **Modo Demo Interactivo** (sin necesidad de configuraciones ni credenciales de Azure) aquí:
-🔗 **[Enlace de tu App en Google Cloud Run]**
+🔗https://sharepoint-smartclassifier-by-riea-782897543653.us-west2.run.app
 
 ---
 
