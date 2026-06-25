@@ -1,10 +1,11 @@
 # RIEA SharePoint SmartClassifier v1.1
-
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white)
 ![Microsoft Graph](https://img.shields.io/badge/Microsoft%20Graph-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+<img width="1248" height="619" alt="image" src="https://github.com/user-attachments/assets/bb6aa661-125e-47cc-a7ea-908023dd8b22" />
 
 >## Executive Summary
 
@@ -31,15 +32,18 @@ La herramienta se conecta de manera segura a un sitio raíz de SharePoint, mapea
 ### 1. Mapeador de Estructura (Modelo Freemium)
 * **Visión Jerárquica:** Mapeo y exploración en tiempo real de las bibliotecas de documentos, carpetas y archivos mediante peticiones eficientes utilizando Microsoft Graph API.
 * **Límite de Prueba Estricto:** Restricción automatizada en el backend a los primeros **15 elementos** para cuentas en versión gratuita, acompañado de un banner premium deshabilitado con la leyenda `Coming Soon` para la conversión a la versión Pro.
+<img width="1227" height="647" alt="image" src="https://github.com/user-attachments/assets/76882d41-b52d-4faa-a2f9-17145feffbba" />
 
 ### 2. Clasificador AI Dinámico (Soporte para Archivos y Carpetas)
 * **Análisis Contextual:** Gemini procesa nombres, rutas y extensiones de archivos para deducir de forma precisa la taxonomía ideal. El sistema soporta la clasificación tanto de archivos individuales como de carpetas macro corporativas.
 * **Hashtags Editables:** La interfaz despliega los 5 hashtags sugeridos en campos de texto completamente interactivos para que el usuario pueda auditarlos, borrarlos o agregar etiquetas personalizadas antes de consolidarlos.
 * **Inyección a SharePoint:** Al confirmar, el sistema concatena los tags separados por espacios y realiza una solicitud `PATCH` a Microsoft Graph actualizando la columna interna `AITags` (utilizando la notación *camelCase* requerida por Microsoft).
+<img width="1258" height="772" alt="image" src="https://github.com/user-attachments/assets/37b49b58-5a46-404f-a81a-d7c72bd5439a" />
 
 ### 3. Modo Demo Inteligente (Ideal para Reclutadores / Portfolio)
 * **Cero Fricción:** Diseñado específicamente para que los líderes técnicos y *Hiring Managers* prueben la aplicación en 5 segundos sin comprometer la seguridad ni las claves de su organización.
 * **Mock AI Context-Aware:** Al activar el interruptor de Modo Demo, el sistema simula un tiempo de carga asíncrono de 1.5s (con un spinner visual) y genera localmente 5 hashtags sumamente coherentes basados en palabras clave del archivo de simulación (ej. archivos con "Factura" disparan tags contables; carpetas disparan tags estructurales).
+<img width="1295" height="268" alt="image" src="https://github.com/user-attachments/assets/7a42ded7-9f10-4a2a-ba18-4f7bd1f7a124" />
 
 ### 4. Características Premium y Accesibilidad Global
 * **Internacionalización (i18n):** Soporte nativo para alternar toda la interfaz de la aplicación de manera instantánea entre **Español e Inglés** mediante un selector en el encabezado.
@@ -69,7 +73,7 @@ Si deseas clonar este repositorio y ejecutarlo en tu propio entorno de desarroll
 
 ### 1. Clonar el repositorio
 bash
-git clone [https://github.com/tu-usuario/RIEA-SharePoint-SmartClassifier.git](https://github.com/tu-usuario/RIEA-SharePoint-SmartClassifier.git)
+git clone [https://github.com/tu-usuario/RIEA-SharePoint-SmartClassifier.git]
 
 2. Configurar variables de entorno (.env)
 Crea un archivo .env en la raíz del proyecto con los siguientes parámetros:
